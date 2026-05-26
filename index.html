@@ -3,62 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Josiane Dib Portfolio</title>
+  <title>Josiane Dib | Portfolio</title>
 
   <style>
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:#f5f5f5;
-      color:#333;
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
     }
 
-    header{
-      background:#111827;
-      color:white;
-      text-align:center;
-      padding:60px 20px;
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
     }
 
-    header h1{
-      margin:0;
-      font-size:48px;
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
     }
 
-    header p{
-      font-size:20px;
-      margin-top:10px;
+    header p {
+      font-size: 20px;
+      color: #cbd5e1;
     }
 
-    section{
-      max-width:1000px;
-      margin:auto;
-      padding:50px 20px;
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
-    h2{
-      color:#111827;
-      margin-bottom:20px;
+    nav a {
+      margin: 0 12px;
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    .card{
-      background:white;
-      padding:20px;
-      border-radius:10px;
-      margin-bottom:20px;
-      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 55px 20px;
     }
 
-    footer{
-      text-align:center;
-      padding:30px;
-      background:#111827;
-      color:white;
+    h2 {
+      color: #0f172a;
+      font-size: 30px;
+      margin-bottom: 25px;
+      border-left: 5px solid #2563eb;
+      padding-left: 12px;
     }
 
-    a{
-      color:#2563eb;
-      text-decoration:none;
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0ecff;
+      color: #1d4ed8;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 8px;
+      font-weight: bold;
+    }
+
+    .btn.secondary {
+      background: #0f172a;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    a {
+      color: #2563eb;
     }
   </style>
 </head>
@@ -67,61 +120,172 @@
 
 <header>
   <h1>Josiane Dib</h1>
-  <p>Engineering Student | Software & AI Enthusiast</p>
+  <p>Final-Year Engineering Student | Python Backend • Data • Software Engineering</p>
+  <a class="btn" href="#projects">View Projects</a>
+  <a class="btn secondary" href="#contact">Contact Me</a>
 </header>
 
-<section>
-  <h2>About Me</h2>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#journey">Journey</a>
+  <a href="#contact">Contact</a>
+</nav>
 
+<section id="about">
+  <h2>About Me</h2>
   <div class="card">
     <p>
-      Final-year engineering student in France with experience in software engineering,
-      AI, data analysis, and collaborative teamwork through internships and academic projects.
+      I am a final-year engineering student at ENIB - INP Bretagne, currently working as a
+      work-study student at Orange Business. My background combines software engineering,
+      Python backend development, data processing, monitoring, and collaborative engineering projects.
+    </p>
+    <p>
+      I have experience in backend development, REST APIs, data pipelines, dashboards, and embedded systems.
+      I am looking for a CDI opportunity where I can contribute to technical projects while continuing to grow
+      as a software and data-oriented engineer.
     </p>
   </div>
 </section>
 
-<section>
+<section id="skills">
+  <h2>Technical Skills</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Languages & Data</h3>
+      <span class="tag">Python</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Java</span>
+      <span class="tag">C</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">Data Analysis</span>
+    </div>
+
+    <div class="card">
+      <h3>Backend & APIs</h3>
+      <span class="tag">Flask</span>
+      <span class="tag">FastAPI</span>
+      <span class="tag">REST APIs</span>
+      <span class="tag">JSON</span>
+      <span class="tag">Automation</span>
+    </div>
+
+    <div class="card">
+      <h3>Data & Monitoring</h3>
+      <span class="tag">InfluxDB</span>
+      <span class="tag">Grafana</span>
+      <span class="tag">Dashboards</span>
+      <span class="tag">Power BI</span>
+      <span class="tag">Data Quality</span>
+    </div>
+
+    <div class="card">
+      <h3>DevOps & Tools</h3>
+      <span class="tag">Git</span>
+      <span class="tag">GitHub</span>
+      <span class="tag">Docker</span>
+      <span class="tag">CI/CD</span>
+      <span class="tag">Jira</span>
+      <span class="tag">Confluence</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
   <h2>Professional Experience</h2>
 
   <div class="card">
-    <p>
-      Participated in collaborative sessions with engineering teams in Lannion
-      during internships and work-study experiences.
-    </p>
+    <h3>Work-Study Student — Data Engineer / Backend & Data Development</h3>
+    <p><strong>Orange Business, France | 2025 - 2026</strong></p>
+    <ul>
+      <li>Development of REST APIs in Python for data integration and exposure.</li>
+      <li>Data processing, transformation, and usage analysis.</li>
+      <li>Dashboard design for monitoring and data visualization.</li>
+      <li>Participation in Agile ceremonies and collaborative technical work.</li>
+      <li>Technical documentation and contribution to data quality validation.</li>
+    </ul>
   </div>
-</section>
-
-<section>
-  <h2>Student Activities</h2>
 
   <div class="card">
-    <p>
-      Active member of OSA student organization in Lebanon,
-      contributing to university activities and events.
-    </p>
+    <h3>Internship — Python Backend Development</h3>
+    <p><strong>Orange Innovation, Rennes, France | 2025</strong></p>
+    <ul>
+      <li>Development of a Python application for data collection, processing, and exploitation.</li>
+      <li>Design of REST APIs using Flask and FastAPI.</li>
+      <li>Creation of JSON outputs and integration of data services.</li>
+      <li>Implementation of dashboards and data visualization tools.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Internship — Embedded Software & Data Analysis</h3>
+    <p><strong>RYMCO Powersports, Lebanon | 2021 - 2022</strong></p>
+    <ul>
+      <li>Improvement of embedded software for technical systems.</li>
+      <li>Data analysis for diagnostic tools and system monitoring.</li>
+      <li>Optimization of performance and reliability.</li>
+    </ul>
   </div>
 </section>
 
-<section>
+<section id="projects">
   <h2>Projects</h2>
 
   <div class="card">
-    <p>Projects coming soon...</p>
+    <h3>Academic & Personal Projects</h3>
+    <p>
+      This section will be updated soon with detailed documentation of academic, personal,
+      and professional projects including Python, backend development, data analysis,
+      AI, monitoring, and embedded systems.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Examples of upcoming projects</h3>
+    <ul>
+      <li>Hydroelectric connected system: real-time monitoring and data processing.</li>
+      <li>IoT sensor network: acquisition, processing, and visualization.</li>
+      <li>BMI calculator: web application with API and user management.</li>
+      <li>Mobile robot: embedded system with FreeRTOS and remote supervision.</li>
+    </ul>
   </div>
 </section>
 
-<section>
+<section id="journey">
+  <h2>Professional & Student Journey</h2>
+
+  <div class="card">
+    <h3>Team Collaboration</h3>
+    <p>
+      Participation in collaborative sessions with engineering teams in Lannion,
+      focused on technical exchanges, project coordination, and team integration.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Student Activities — OSA</h3>
+    <p>
+      Active member of the OSA student organization in Lebanon, contributing to university
+      activities, events, and collaborative student initiatives.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
   <h2>Contact</h2>
 
   <div class="card">
-    <p>Email: josianedeeb3@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/josianedib">github.com/josianedib</a></p>
+    <p><strong>Email:</strong> josianedeeb3@gmail.com</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/josianedib" target="_blank">github.com/josianedib</a></p>
+    <p><strong>Portfolio:</strong> <a href="https://josianedib.github.io/portfolio/" target="_blank">josianedib.github.io/portfolio</a></p>
   </div>
 </section>
 
 <footer>
-  © 2026 Josiane Dib Portfolio
+  © 2026 Josiane Dib — Engineering Portfolio
 </footer>
 
 </body>
