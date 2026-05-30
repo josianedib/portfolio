@@ -1,65 +1,664 @@
-<div class="card">
-  <h3>Backend & Software</h3>
-  <span class="tag">REST APIs</span>
-  <span class="tag">Flask</span>
-  <span class="tag">FastAPI</span>
-  <span class="tag">JSON</span>
-  <span class="tag">Git/GitHub</span>
-</div>
+<!DOCTYPE html>
 
-<div class="card">
-  <h3>Embedded & IoT</h3>
-  <span class="tag">Raspberry Pi</span>
-  <span class="tag">Embedded Systems</span>
-  <span class="tag">IoT</span>
-  <span class="tag">Sensors</span>
-  <span class="tag">Monitoring</span>
-</div>
+<html lang="en">
 
-<div class="card">
-  <h3>Data & Tools</h3>
-  <span class="tag">Data Processing</span>
-  <span class="tag">Pandas</span>
-  <span class="tag">Grafana</span>
-  <span class="tag">InfluxDB</span>
-  <span class="tag">Dashboards</span>
-</div>
+<head>
 
-<p>
-  The system used a Raspberry Pi programmed in Python and connected to a mobile application. The hydroelectric part generated electricity through a water-driven mechanism where river flow rotated a coil-based generator.
-</p>
+  <meta charset="UTF-8" />
 
-<h4>Main Features</h4>
-<ul>
-  <li>Remote monitoring and control of household electricity usage.</li>
-  <li>Mobile application for supervision and configuration.</li>
-  <li>Consumption threshold management for each house.</li>
-  <li>Notifications when a house exceeded the allocated current limit.</li>
-  <li>Integration between Raspberry Pi, electrical monitoring, and the mobile interface.</li>
-</ul>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<h4>Technologies & Skills</h4>
-<span class="tag">Python</span>
-<span class="tag">Raspberry Pi</span>
-<span class="tag">IoT</span>
-<span class="tag">Mobile Application</span>
-<span class="tag">Energy Monitoring</span>
-<span class="tag">Embedded Systems</span>
+  <title>Josiane Dib | Portfolio</title>
 
-<div class="card">
-  <img src="lannion-presentation.png" alt="Project presentation in Lannion">
-  <h3>Project Presentation Days — Lannion</h3>
+
+
+  <style>
+
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+
+
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      background: #f8fafc;
+
+      color: #1f2937;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    header {
+
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+
+      color: white;
+
+      padding: 80px 20px;
+
+      text-align: center;
+
+    }
+
+
+
+    header h1 {
+
+      font-size: 48px;
+
+      margin-bottom: 10px;
+
+    }
+
+
+
+    header p {
+
+      font-size: 20px;
+
+      color: #cbd5e1;
+
+    }
+
+
+
+    nav {
+
+      background: white;
+
+      padding: 15px;
+
+      text-align: center;
+
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 10;
+
+    }
+
+
+
+    nav a {
+
+      margin: 0 12px;
+
+      color: #0f172a;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+    }
+
+
+
+    section {
+
+      max-width: 1100px;
+
+      margin: auto;
+
+      padding: 55px 20px;
+
+    }
+
+
+
+    h2 {
+
+      color: #0f172a;
+
+      font-size: 30px;
+
+      margin-bottom: 25px;
+
+      border-left: 5px solid #2563eb;
+
+      padding-left: 12px;
+
+    }
+
+
+
+    .card {
+
+      background: white;
+
+      padding: 25px;
+
+      border-radius: 14px;
+
+      margin-bottom: 22px;
+
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+
+    }
+
+
+
+    .grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+      gap: 20px;
+
+    }
+
+
+
+    .tag {
+
+      display: inline-block;
+
+      background: #e0ecff;
+
+      color: #1d4ed8;
+
+      padding: 8px 12px;
+
+      margin: 5px;
+
+      border-radius: 20px;
+
+      font-size: 14px;
+
+    }
+
+
+
+    .btn {
+
+      display: inline-block;
+
+      background: #2563eb;
+
+      color: white;
+
+      padding: 12px 20px;
+
+      border-radius: 8px;
+
+      text-decoration: none;
+
+      margin: 8px;
+
+      font-weight: bold;
+
+    }
+
+
+
+    .btn.secondary {
+
+      background: #0f172a;
+
+    }
+
+
+
+    img {
+
+      width: 100%;
+
+      border-radius: 12px;
+
+      margin-bottom: 15px;
+
+    }
+
+
+
+    footer {
+
+      background: #0f172a;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 30px;
+
+    }
+
+
+
+    a {
+
+      color: #2563eb;
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+  <h1>Josiane Dib</h1>
+
+  <p>Final-Year Engineering Student | Software Engineering • Backend • Embedded Systems • Data</p>
+
+  <a class="btn" href="#projects">View Projects</a>
+
+  <a class="btn secondary" href="#contact">Contact Me</a>
+
+</header>
+
+
+
+<nav>
+
+  <a href="#about">About</a>
+
+  <a href="#skills">Skills</a>
+
+  <a href="#academic">Education</a>
+
+  <a href="#projects">Projects</a>
+
+  <a href="#journey">Activities</a>
+
+  <a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<section id="about">
+
+  <h2>About Me</h2>
+
+  <div class="card">
+
+    <p>
+
+      I am a final-year engineering student at ENIB - INP Bretagne. My academic and technical background combines software engineering, backend development, embedded systems, IoT, data processing, and human-machine interfaces.
+
+    </p>
+
+    <p>
+
+      I am interested in building useful and reliable software systems, especially projects involving Python, backend services, connected systems, monitoring, automation, and data-oriented applications.
+
+    </p>
+
+    <p>
+
+      This portfolio presents my academic background, technical interests, selected projects, and student/professional journey.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section id="skills">
+
+  <h2>Technical Skills</h2>
+
+
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>Programming</h3>
+
+      <span class="tag">Python</span>
+
+      <span class="tag">C</span>
+
+      <span class="tag">Java</span>
+
+      <span class="tag">SQL</span>
+
+      <span class="tag">HTML/CSS</span>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <h3>Backend & Software</h3>
+
+      <span class="tag">REST APIs</span>
+
+      <span class="tag">Flask</span>
+
+      <span class="tag">FastAPI</span>
+
+      <span class="tag">JSON</span>
+
+      <span class="tag">Git/GitHub</span>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <h3>Embedded & IoT</h3>
+
+      <span class="tag">Raspberry Pi</span>
+
+      <span class="tag">Embedded Systems</span>
+
+      <span class="tag">IoT</span>
+
+      <span class="tag">Sensors</span>
+
+      <span class="tag">Monitoring</span>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <h3>Data & Tools</h3>
+
+      <span class="tag">Data Processing</span>
+
+      <span class="tag">Pandas</span>
+
+      <span class="tag">Grafana</span>
+
+      <span class="tag">InfluxDB</span>
+
+      <span class="tag">Dashboards</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section id="academic">
+
+  <h2>Academic Journey</h2>
+
+
+
+  <div class="card">
+
+    <h3>ENIB - INP Bretagne</h3>
+
+    <p>
+
+      Final-year engineering studies in France, with projects and courses involving software engineering, Python development, human-machine interfaces, data mining, robotics, OpenGL, and system design.
+
+    </p>
+
+  </div>
+
+
+
+  <div class="card">
+
+    <h3>University of Balamand — Lebanon</h3>
+
+    <p>
+
+      Engineering background with a strong focus on programming, embedded systems, C language, technical systems, and applied engineering projects.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section id="projects">
+
+  <h2>Projects</h2>
+
+
+
+  <div class="card">
+
+    <h3>Smart Hydroelectric Energy Monitoring System</h3>
+
+    <p>
+
+      Final-year project at the University of Balamand focused on a smart energy management system connected to a small-scale hydroelectric generation setup.
+
+    </p>
+
+
+
+    <p>
+
+      The system used a Raspberry Pi programmed in Python and connected to a mobile application. The hydroelectric part generated electricity through a water-driven mechanism where river flow rotated a coil-based generator.
+
+    </p>
+
+
+
+    <h4>Main Features</h4>
+
+    <ul>
+
+      <li>Remote monitoring and control of household electricity usage.</li>
+
+      <li>Mobile application for supervision and configuration.</li>
+
+      <li>Consumption threshold management for each house.</li>
+
+      <li>Notifications when a house exceeded the allocated current limit.</li>
+
+      <li>Integration between Raspberry Pi, electrical monitoring, and the mobile interface.</li>
+
+    </ul>
+
+
+
+    <h4>Technologies & Skills</h4>
+
+    <span class="tag">Python</span>
+
+    <span class="tag">Raspberry Pi</span>
+
+    <span class="tag">IoT</span>
+
+    <span class="tag">Mobile Application</span>
+
+    <span class="tag">Energy Monitoring</span>
+
+    <span class="tag">Embedded Systems</span>
+
+  </div>
+
+
+
+ <div class="card">
+
+  <img src="godot-enib-game.png" alt="ENIB defense video game made with Godot">
+
+
+
+  <h3>ENIB Defense Game — Godot & Blender</h3>
+
+
+
   <p>
-    Participation in large-scale technical presentation days in Lannion, presenting projects and exchanging with companies and journalists.
+
+    Development of a 3D video game prototype where the player defends ENIB against enemies.
+
+    The project combined 3D modeling, game logic, player controls, and interactive gameplay.
+
   </p>
+
+
+
+  <h4>Main Features</h4>
+
+  <ul>
+
+    <li>3D environment inspired by ENIB, including buildings and decorative elements.</li>
+
+    <li>3D models created with Blender, such as trees, buildings, and scene objects.</li>
+
+    <li>Player movement using keyboard arrows.</li>
+
+    <li>Shooting mechanic using the space key.</li>
+
+    <li>Enemy waves and building life system.</li>
+
+  </ul>
+
+
+
+  <h4>Technologies & Skills</h4>
+
+  <span class="tag">Godot</span>
+
+  <span class="tag">Blender</span>
+
+  <span class="tag">3D Modeling</span>
+
+  <span class="tag">Game Development</span>
+
+  <span class="tag">Keyboard Controls</span>
+
 </div>
 
-<div class="card">
-  <img src="orange-retirement.jpg" alt="Team celebration at Orange">
-  <h3>Team Life — Orange Business</h3>
+</section>
+
+
+
+<section id="journey">
+
+  <h2>Student & Professional Journey</h2>
+
+
+
+  <div class="grid">
+
+    <div class="card">
+
+      <img src="osa-balamand.jpeg" alt="OSA Student Organization Event">
+
+      <h3>Student Leadership — University of Balamand</h3>
+
+      <p>
+
+        Active member of the OSA student organization, contributing to student activities, institutional events, and community engagement initiatives.
+
+      </p>
+
+      <p>
+
+        Participated in the reception of representatives from the American Task Force for Lebanon during an official visit to the Issam M. Fares Faculty of Technology.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <img src="lannion-presentation.png" alt="Project presentation in Lannion">
+
+      <h3>Project Presentation Days — Lannion</h3>
+
+      <p>
+
+        Participation in large-scale technical presentation days in Lannion, presenting projects and exchanging with companies and journalists.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <img src="orange-retirement.jpg" alt="Team celebration at Orange">
+
+      <h3>Team Life — Orange Business</h3>
+
+      <p>
+
+        Participation in team events celebrating career milestones and reinforcing team cohesion during the work-study experience.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+  <img src="lannion-team.jpeg" alt="Team event in Lannion">
+
+  <h3>Team Collaboration — Lannion</h3>
+
   <p>
-    Participation in team events celebrating career milestones and reinforcing team cohesion during the work-study experience.
+
+    Collaborative moments with engineering teams during professional events in Lannion,
+
+    strengthening communication, teamwork, and project coordination.
+
   </p>
+
 </div>
 
-<div class="card">
+  </div>
+
+</section>
+
+
+
+<section id="contact">
+
+  <h2>Contact</h2>
+
+
+
+  <div class="card">
+
+    <p><strong>Email:</strong> josianedeeb3@gmail.com</p>
+
+ </div>
+
+</section>
+
+
+
+<footer>
+
+  © 2026 Josiane Dib — Engineering Portfolio
+
+</footer>
+
+
+
+</body>
+
+</html>
+
